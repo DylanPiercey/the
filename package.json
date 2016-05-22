@@ -1,0 +1,52 @@
+{
+  "name": "the",
+  "description": "Lightweight schemas for everywhere, whenever.",
+  "version": "1.0.0",
+  "author": "Dylan Piercey <pierceydylan@gmail.com>",
+  "bugs": "https://github.com/DylanPiercey/the/issues",
+  "dependencies": {
+    "is-typeof": "^1.0.0"
+  },
+  "devDependencies": {
+    "dox": "^0.8.0",
+    "gulp": "^3.8.11",
+    "gulp-mocha": "^2.0.1",
+    "mocha": "^2.2.5",
+    "snazzy": "^4.0.0",
+    "standard": "^7.1.0"
+  },
+  "homepage": "https://github.com/DylanPiercey/the",
+  "keywords": [
+    "assert",
+    "ok",
+    "okay",
+    "schema",
+    "test",
+    "the",
+    "validate",
+    "validation",
+    "validator"
+  ],
+  "license": "MIT",
+  "main": "lib/index.js",
+  "prepublish": "npm test && npm run doc",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/DylanPiercey/the"
+  },
+  "scripts": {
+    "doc": "gulp build-doc",
+    "lint": "standard --verbose | snazzy",
+    "test": "npm run lint && gulp test"
+  },
+  "standard": {
+    "globals": [
+      "describe",
+      "it",
+      "before",
+      "beforeEach",
+      "after",
+      "afterEach"
+    ]
+  }
+}

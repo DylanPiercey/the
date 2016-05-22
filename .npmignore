@@ -1,0 +1,11 @@
+# Tools
+*.sublime*
+
+# OSX
+*.DS_Store
+
+# Build
+gulpfile.js
+
+# Tests
+test
