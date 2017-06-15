@@ -94,13 +94,13 @@ describe('Type', function () {
     check({
       type: 'stream',
       pass: [fs.createReadStream(path.join(__dirname, '/type.test.js'))],
-      fail: [new Buffer('')]
+      fail: [Buffer.from('')]
     })
   })
   it('#buffer', function () {
     check({
       type: 'buffer',
-      pass: [new Buffer('')],
+      pass: [Buffer.from('')],
       fail: [1]
     })
   })
